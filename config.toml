@@ -1,4 +1,4 @@
-baseurl = "https://namespace.gitlab.io"
+baseurl = "https://dariusz.mozgowoj1.gitlab.io"
 title = "My blog"
 theme = "ghostwriter"
 
