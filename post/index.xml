@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My blog</title>
+    <link>https://darmoz.github.io/blog/post/</link>
+    <description>Recent content in Posts on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 11 Oct 2020 08:13:50 +0000</lastBuildDate><atom:link href="https://darmoz.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static API html document</title>
+      <link>https://darmoz.github.io/blog/static-api-docs-html/</link>
+      <pubDate>Sun, 11 Oct 2020 08:13:50 +0000</pubDate>
+      
+      <guid>https://darmoz.github.io/blog/static-api-docs-html/</guid>
+      <description>Introduction &amp;ldquo;Could you provide some api docs?&amp;quot; I heard recenlty from my colegues which are working on mobile part of the application. You can ask now&amp;hellip; well where the problem is? We have already swagger and other tools. Unfortunately our team does not want to expose the api docs as the web resource, so the aim was to create some static output of api docs&amp;hellip; and this was not as trivial task as I assumed at the beggining.</description>
+    </item>
+    
+  </channel>
+</rss>

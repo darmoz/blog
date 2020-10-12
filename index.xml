@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My blog</title>
+    <link>https://darmoz.github.io/blog/</link>
+    <description>Recent content on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 11 Oct 2020 20:13:50 +0000</lastBuildDate><atom:link href="https://darmoz.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://darmoz.github.io/blog/page/contact/</link>
+      <pubDate>Sun, 11 Oct 2020 20:13:50 +0000</pubDate>
+      
+      <guid>https://darmoz.github.io/blog/page/contact/</guid>
+      <description>Contact Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
+    </item>
+    
+    <item>
+      <title>Static API html document</title>
+      <link>https://darmoz.github.io/blog/static-api-docs-html/</link>
+      <pubDate>Sun, 11 Oct 2020 08:13:50 +0000</pubDate>
+      
+      <guid>https://darmoz.github.io/blog/static-api-docs-html/</guid>
+      <description>Introduction &amp;ldquo;Could you provide some api docs?&amp;quot; I heard recenlty from my colegues which are working on mobile part of the application. You can ask now&amp;hellip; well where the problem is? We have already swagger and other tools. Unfortunately our team does not want to expose the api docs as the web resource, so the aim was to create some static output of api docs&amp;hellip; and this was not as trivial task as I assumed at the beggining.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://darmoz.github.io/blog/page/about/</link>
+      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      
+      <guid>https://darmoz.github.io/blog/page/about/</guid>
+      <description>About Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dolor in magna lobortis egestas. Suspendisse eu erat tempor, tristique neque eu, convallis nulla. Curabitur vel bibendum lacus, at semper mauris. Suspendisse aliquet commodo ex, sed sagittis metus aliquam id. Maecenas feugiat rutrum lorem vel imperdiet. Nullam ornare lectus ut enim finibus, et porttitor mi tincidunt. Aenean lacinia, leo quis vehicula eleifend, quam libero sagittis erat, at euismod augue mauris et sapien.</description>
+    </item>
+    
+  </channel>
+</rss>
