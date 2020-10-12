@@ -7,7 +7,7 @@
         <meta name="description" content="How to get static html file out of the swagger box">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.76.3" />
+        <meta name="generator" content="Hugo 0.76.4" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Static API html document">
@@ -84,15 +84,15 @@
     
 
     <h2 id="introduction">Introduction</h2>
-<p><em>&ldquo;Could you provide some api docs?&quot;</em> I heard recenlty from my colegues which are working on mobile part of the application.
+<p><em>&ldquo;Could you provide some api docs?&quot;</em> I heard recently from my colleagues which are working on mobile part of the application.
 You can ask now&hellip; well where the problem is? We have already swagger and other tools. Unfortunately our team does not want
 to expose the api docs as the web resource, so the aim was to create some static output of api docs&hellip; and this was not
-as trivial task as I assumed at the beggining.</p>
+as trivial task as I assumed at the beginning.</p>
 <h2 id="how-to">How to</h2>
-<p>Just for clarification the project was setup with maven and below examples provide information related to maven only.
-Moreover tests run in solution was written in <strong>Spock</strong>, however it can be simply adapt to junit if required.</p>
+<p>Just for clarification the project was setup with <strong>maven</strong> and below examples provide information related to maven only.
+Moreover tests was written in <strong>Spock</strong>, however it can be simply adapt to junit if required.</p>
 <h3 id="required-repositories-and-dependencies">Required repositories and dependencies</h3>
-<p>After some investigation I found that to achieve the goal requires some additional repositories and repository plugins to
+<p>After some investigation I found that to achieve the goal I need some additional repositories and repository plugins to
 get the solution works.</p>
 <pre><code>    &lt;repositories&gt;
         &lt;repository&gt;
@@ -132,7 +132,7 @@ get the solution works.</p>
 &lt;/dependencies&gt;
 </code></pre><h3 id="first-step---create-swaggerjson">First step - create swagger.json</h3>
 <p>I used swagger to create json version of api documentation. To get this done a test (as presented below) was written.
-Test triggered with other tests through CICD pippline each time a new portion of code is merge to master branch.</p>
+Test triggered with other tests through CICD pipeline each time a new portion of code is merge to master branch.</p>
 <p>The test itself:</p>
 <pre><code>@SpringBootTest(classes = CoreApplication.class)
 class GenerateSwaggerSpec extends Specification {
@@ -222,7 +222,7 @@ in this language at location defined in plugin <em>../generated-sources/swagger/
 </code></pre><p>In presented snippet few things are going on. To get better understanding we can read snipped from buttom to top.</p>
 <ol>
 <li>Plugin read output from swagger2markup -&gt; ASCIDOC processing located in <em>&hellip;/generated-sources/swagger/</em>.</li>
-<li>Then the file from location <em>&hellip;/src/main/resources/asciidoc/</em> called *<em>index.adoc</em> is used</li>
+<li>Then the file from location <em>&hellip;/src/main/resources/asciidoc/</em> called <strong>index.adoc</strong> is used</li>
 <li>Plugin process data and output html static file at location of <em>&hellip;/generated-sources/swagger-html/</em></li>
 </ol>
 <p>I believe that point 2 needs some more explanation
@@ -233,7 +233,7 @@ include::{generated}/paths.adoc[]
 include::{generated}/security.adoc[]
 include::{generated}/definitions.adoc[]
 </code></pre><h3 id="some-more-details-about-the-process">Some more details about the process</h3>
-<p>Above structures points to files generated with swagger2markup process and they will be automatically inserted in the order
+<p>Above structures points to files generated with swagger2markup process, and they will be automatically inserted in the order
 as described in <strong>index.adoc</strong>.</p>
 <h3 id="hint-about-the-cicd">Hint about the CICD</h3>
 <p>In the above case <strong>swagger.json</strong> was generated at <em>test</em> stage of CICD pipeline.

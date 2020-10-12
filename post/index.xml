@@ -12,7 +12,7 @@
       <pubDate>Sun, 11 Oct 2020 08:13:50 +0000</pubDate>
       
       <guid>https://darmoz.github.io/blog/static-api-docs-html/</guid>
-      <description>Introduction &amp;ldquo;Could you provide some api docs?&amp;quot; I heard recenlty from my colegues which are working on mobile part of the application. You can ask now&amp;hellip; well where the problem is? We have already swagger and other tools. Unfortunately our team does not want to expose the api docs as the web resource, so the aim was to create some static output of api docs&amp;hellip; and this was not as trivial task as I assumed at the beggining.</description>
+      <description>Introduction &amp;ldquo;Could you provide some api docs?&amp;quot; I heard recently from my colleagues which are working on mobile part of the application. You can ask now&amp;hellip; well where the problem is? We have already swagger and other tools. Unfortunately our team does not want to expose the api docs as the web resource, so the aim was to create some static output of api docs&amp;hellip; and this was not as trivial task as I assumed at the beginning.</description>
     </item>
     
   </channel>
